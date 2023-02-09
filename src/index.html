@@ -11,129 +11,27 @@
   </head>
 
   <body>
-    <div x-data="{ open: false }">
-      <nav class="container d-none d-md-flex px-4 lg:px-0 py-1 flex items-center justify-between">
-        <div class="flex lg:flex-1">
-          <a href="#">
-            <img src="images/logo.svg" alt="" width="105" height="64" />
+    <header class="my-bg-top flex items-end">
+      <div class="container px-4 lg:px-0 py-32 lg:py-60">
+        <h1 class="tracking-tight text-gray-900 text-center text-md-start">
+          <span class="text-green-600 font-display text-[5rem] leading-none principal-title">Favela Tech</span> <br />
+          <span class="font-['GilroyExtraBold'] text-4xl sm:text-6xl subtext">
+            nosso propósito é apresentar, ensinar e <br />
+            gerar renda para população XXX dentro <br />
+            do mercado que mais cresce no mundo
+          </span>
+        </h1>
+
+        <div class="d-flex justify-content-center justify-content-md-start">
+          <a
+            href="#"
+            class="inline-block font-['GilroyExtraBold'] text-black mt-10 min-w-[237px] text-center rounded bg-yellow-600 p-3.5 md:py-6 text-base shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
+          >
+            FAÇA PARTE
           </a>
-        </div>
-
-        <div class="flex lg:hidden">
-          <button type="button" x-on:click="open = true" :aria-expanded="open.toString()">
-            <span class="sr-only">Abra o menu principal</span>
-            <svg
-              class="h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
-        </div>
-
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-xl text-gray-900">Home</a>
-
-          <a href="#" class="text-xl text-gray-900">Empresa</a>
-
-          <a href="#" class="text-xl text-gray-900">Testemunhos</a>
-
-          <a href="#" class="text-xl text-gray-900">Blog</a>
-
-          <a href="#" class="text-xl text-gray-900">Contato</a>
-        </div>
-      </nav>
-
-      <!-- Mobile menu, show/hide based on menu open state. -->
-      <div
-        role="dialog"
-        aria-modal="true"
-        x-show="open"
-        x-transition:enter="duration-100 ease-out"
-        x-transition:enter-start="opacity-0 scale-95"
-        x-transition:enter-end="opacity-100 scale-100"
-        x-transition:leave="duration-100 ease-in"
-        x-transition:leave-start="opacity-100 scale-100"
-        x-transition:leave-end="opacity-0 scale-95"
-        class="fixed inset-0 z-10 overflow-y-auto bg-white px-4 py-1 lg:hidden"
-      >
-        <div class="flex items-center justify-between">
-          <a href="#">
-            <img src="images/logo.svg" alt="" width="105" height="64" />
-          </a>
-
-          <button type="button" x-on:click="open = false">
-            <span class="sr-only">Fechar menu</span>
-            <svg
-              class="h-6 w-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              aria-hidden="true"
-            >
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-
-        <div class="flow-root">
-          <div class="divide-y divide-gray-500/10">
-            <div class="space-y-2 py-12">
-              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base text-gray-900 hover:bg-gray-400/10">
-                Home
-              </a>
-
-              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base text-gray-900 hover:bg-gray-400/10">
-                Empresa
-              </a>
-
-              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base text-gray-900 hover:bg-gray-400/10">
-                Testemunhos
-              </a>
-
-              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base text-gray-900 hover:bg-gray-400/10">
-                Blog
-              </a>
-
-              <a href="#" class="-mx-3 block rounded-lg py-2 px-3 text-base text-gray-900 hover:bg-gray-400/10">
-                Contato
-              </a>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
-
-    <div class="my-bg-top">
-      <header class="container px-4 lg:px-0">
-        <div class="py-32 top-mob sm:py-48 lg:py-60">
-          <h1 class="tracking-tight text-gray-900 text-center text-md-start">
-            <span class="text-green-600 font-display text-[5rem] leading-none principal-title">Favela Tech</span> <br />
-            <span class="font-['GilroyExtraBold'] text-4xl sm:text-6xl subtext">
-              nosso propósito é apresentar, ensinar e  <br />
-              gerar renda para população XXX dentro  <br />
-              do mercado que mais cresce no mundo
-            </span>
-          </h1>
-
-          <div class="d-flex justify-content-center justify-content-md-start">
-            <a
-              href="#"
-              class="inline-block font-['GilroyExtraBold'] text-black mt-10 min-w-[237px] text-center rounded bg-yellow-600 px-3.5 py-6 text-base shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
-            >
-              FAÇA PARTE
-            </a>
-          </div>
-        </div>
-      </header>
-    </div>
+    </header>
 
     <section class="py-28 sm:py-40 bg-slate-800 bg-subtop">
       <div class="container px-4 sm:px-0 grid sm:grid-cols-2 md:grid-cols-3 gap-12 sm:gap-28 text-center text-white">
@@ -144,12 +42,18 @@
 
         <div>
           <h2 class="text-6xl sm:text-5xl lg:text-[5rem] font-display">22</h2>
-          <p class="text-2xl font-['Poppins']">Empresas apoiando <br class="hidden md:block" /> até o momento</p>
+          <p class="text-2xl font-['Poppins']">
+            Empresas apoiando <br class="hidden md:block" />
+            até o momento
+          </p>
         </div>
 
         <div>
           <h2 class="text-6xl sm:text-5xl lg:text-[5rem] font-display green">10.000</h2>
-          <p class="text-2xl font-['Poppins'] green">Vidas transformadas (nossa <br class="hidden md:block" /> meta para 2023)</p>
+          <p class="text-2xl font-['Poppins'] green">
+            Vidas transformadas (nossa <br class="hidden md:block" />
+            meta para 2023)
+          </p>
         </div>
       </div>
     </section>
@@ -157,7 +61,7 @@
     <div class="bg-third">
       <section class="py-28 sm:py-40 container px-4 sm:px-0 grid md:grid-cols-2">
         <div class="self-center">
-          <h2 class="text-5xl md:text-6xl md:leading-tight text-center meeting-title">
+          <h2 class="text-5xl md:text-6xl md:leading-tight text-center md:text-start meeting-title">
             <span>
               Conheça mais <br class="d-none d-md-block" />
               sobre a
@@ -177,7 +81,7 @@
 
         <img
           class="w-100"
-          src="./images/backgrounds/child.svg"
+          src="images/asian-girl-using-notebook-of-searching-some-information-at-countryside-of-thailand.png"
           alt=""
           width="720"
           height="671"
@@ -185,57 +89,35 @@
       </section>
     </div>
 
-    <div class="bg-fourth">
-      <section class="container py-28 sm:py-40">
+    <section class="bg-fourth">
+      <div class="container px-4 py-28 sm:py-40">
         <h2 class="title fourth text-center text-md-start">Nossos <span class="custom-proj">Projetos</span></h2>
 
-        <img
-          class="hidden md:block"
-          src="./images/backgrounds/carousel/1.svg"
-          alt=""
-          class="w-100"
-        />
+        <div class="overflow-x-auto flex lg:grid gap-6 md:grid-cols-3">
+          <img src="images/backgrounds/carousel/1.png" alt="" class="img-mob" />
 
-        <div class="my-scroll">
-          <img
-            src="./images/backgrounds/carousel/2.svg"
-            alt=""
-            class="img-mob"
-          />
+          <img src="images/backgrounds/carousel/2.png" alt="" class="img-mob" />
 
-          <img
-            src="./images/backgrounds/carousel/3.svg"
-            alt=""
-            class="img-mob"
-          />
+          <img src="images/backgrounds/carousel/3.png" alt="" class="img-mob" />
 
-          <img
-            src="./images/backgrounds/carousel/4.svg"
-            alt=""
-            class="img-mob"
-          />
+          <img src="images/backgrounds/carousel/4.png" alt="" class="img-mob" />
 
-          <img
-            src="./images/backgrounds/carousel/5.svg"
-            alt=""
-            class="img-mob"
-          />
+          <img src="images/backgrounds/carousel/5.png" alt="" class="img-mob" />
 
-          <img
-            src="./images/backgrounds/carousel/6.svg"
-            alt=""
-            class="img-mob"
-          />
+          <img src="images/backgrounds/carousel/6.png" alt="" class="img-mob" />
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
 
-    <div class="d-md-none bg-testimonials">
-      TESTEMUNHOS
-    </div>
+    <div class="md:hidden bg-testimonials">TESTEMUNHOS</div>
 
     <section class="py-28 sm:py-40 bg-fifth">
       <div class="container px-4 md:px-0 text-center">
+        <h2 class="text-5xl sm:text-6xl font-display">Depoimentos</h2>
+        <p class="mt-2 text-2xl max-w-[615px] mx-auto">
+          Confira o depoimento de quem colabora ou foi impactado por essa Transformação
+        </p>
+
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-16">
           <div class="bg-white rounded-xl mt-16 px-4 lg:px-8 pb-4 lg:pb-8">
             <div class="relative flex justify-center">
@@ -300,16 +182,10 @@
     <section class="py-28 sm:py-40 bg-sixty">
       <div class="container">
         <div class="flex-center mb-64">
-          <img
-            src="./images/backgrounds/blog-title.svg"
-            class="hidden md:block"
-          />
+          <img src="images/backgrounds/blog-title.svg" class="hidden md:block" />
         </div>
 
-        <img
-          src="./images/backgrounds/blog.svg"
-          class="hidden md:block w-100"
-        />
+        <img src="images/backgrounds/blog.svg" class="hidden md:block w-100" />
       </div>
     </section>
 
@@ -322,42 +198,48 @@
           <div class="bg-white rounded-lg py-7 px-5">
             <h4 class="text-2xl font-['GilroyExtraBold']">Como ajudar?</h4>
             <p class="mt-3.5">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada mais do que ajudar o
+              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
+              mais do que ajudar o
             </p>
           </div>
 
           <div class="bg-white rounded-lg py-7 px-5">
             <h4 class="text-2xl font-['GilroyExtraBold']">Como me cadastrar no curso?</h4>
             <p class="mt-3.5">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada mais do que
+              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
+              mais do que
             </p>
           </div>
 
           <div class="bg-white rounded-lg py-7 px-5">
             <h4 class="text-2xl font-['GilroyExtraBold']">Como começar a trabalhar?</h4>
             <p class="mt-3.5">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada mais do que
+              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
+              mais do que
             </p>
           </div>
 
           <div class="bg-white rounded-lg py-7 px-5">
             <h4 class="text-2xl font-['GilroyExtraBold']">Como me escrever nas mentorias?</h4>
             <p class="mt-3.5">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada mais do que ajudar o
+              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
+              mais do que ajudar o
             </p>
           </div>
 
           <div class="bg-white rounded-lg py-7 px-5">
             <h4 class="text-2xl font-['GilroyExtraBold']">Onde são os locais de estudo?</h4>
             <p class="mt-3.5">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada mais do que
+              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
+              mais do que
             </p>
           </div>
 
           <div class="bg-white rounded-lg py-7 px-5">
             <h4 class="text-2xl font-['GilroyExtraBold']">Onde são os locais de trabalho?</h4>
             <p class="mt-3.5">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada mais do que
+              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
+              mais do que
             </p>
           </div>
         </div>
@@ -440,19 +322,15 @@
 
         <div>
           <div class="d-flex align-items-center">
-            <img src="./images/icons/envelope.svg" alt="" class="img-icon" />
+            <img src="images/icons/envelope.svg" alt="" class="img-icon" />
 
-            <p>
-              E-mail | contato@favelatech.org
-            </p>
+            <p>E-mail | contato@favelatech.org</p>
           </div>
 
           <div class="d-flex align-items-center">
-            <img src="./images/icons/phone.svg" alt="" class="img-icon" />
+            <img src="images/icons/phone.svg" alt="" class="img-icon" />
 
-            <p>
-              Telefone |  9.4747-6464
-            </p>
+            <p>Telefone | 9.4747-6464</p>
           </div>
         </div>
 
