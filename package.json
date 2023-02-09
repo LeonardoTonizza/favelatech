@@ -1,0 +1,12 @@
+{
+  "name": "favelatech",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/tailwind.css -o ./src/output.css --minify",
+    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./src/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.6"
+  }
+}

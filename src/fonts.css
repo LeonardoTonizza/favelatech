@@ -1,0 +1,14 @@
+@font-face {
+  font-family: GilroyExtraBold;
+  src: url('fonts/gilroy-extra-bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: GilroyLight;
+  src: url('fonts/gilroy-light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: BenzGroteskHeavy;
+  src: url('fonts/BenzGroteskHeavy.ttf') format('truetype');
+}
