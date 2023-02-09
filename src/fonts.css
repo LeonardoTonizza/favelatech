@@ -12,3 +12,234 @@
   font-family: BenzGroteskHeavy;
   src: url('fonts/BenzGroteskHeavy.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: Poppins;
+  src: url('fonts/BenzGroteskHeavy.ttf') format('truetype');
+}
+
+.my-bg-top {
+  background-image: url('./images/backgrounds/background-top.svg');
+  background-size: 100%;
+}
+
+.subtext {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 45px;
+  color: #FFFFFF;
+  opacity: 0.8;
+}
+
+.green {
+  color: #75D8AB;
+}
+
+.bg-subtop {
+  background-image: url('./images/backgrounds/background-subtop.svg');
+  background-size: 100%;
+}
+
+.bg-third {
+  background-image: url('./images/backgrounds/background-third.svg');
+  background-size: 100%;
+}
+
+.bg-fourth {
+  background-image: url('./images/backgrounds/background-fourth.svg');
+  background-size: 100%;
+  background-position: 0 -500px;
+}
+
+.bg-fifth {
+  background-image: url('./images/backgrounds/background-fifty.svg');
+  background-size: 100%;
+  background-position: 0 -353px;
+  min-height: 948px;
+}
+
+.bg-sixty {
+  background-image: url('./images/backgrounds/background-sixty.svg');
+  background-size: 100%;
+  background-position: 0 -80px;
+}
+
+.bg-seventh {
+  background-image: url('./images/backgrounds/background-seventh.svg');
+  background-size: 100%;
+  padding-bottom: 7rem;
+}
+
+.bg-eighth {
+  background-image: url('./images/backgrounds/background-eighth.svg');
+  background-size: 130%;
+  background-position: -282px -310px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.custom-proj {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 77px;
+  color: #0DAFC6;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 77px;
+  margin-bottom: 64px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.img-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.d-none {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .my-bg-top {
+    background-image: url('./images/backgrounds/background-top-mob.svg');
+    background-size: 100%;
+    min-height: 100vh;
+  }
+
+  .bg-subtop {
+    background-image: url('./images/backgrounds/background-subtop.svg');
+    background-size: 600%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .bg-third {
+    background-image: url('./images/backgrounds/bg-third-mob.svg');
+    background-position: 0 -80px;
+  }
+
+  .text-6xl {
+    font-size: 30px;
+  }
+
+  .principal-title {
+    font-weight: 850;
+    font-size: 38px;
+    line-height: 39px;
+  }
+
+  .subtext {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .top-mob {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-bottom: 5rem;
+  }
+
+  .description-meet {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #4B4852;
+    margin-bottom: 31px;
+  }
+
+  .meeting-title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .my-scroll {
+    overflow-x: auto;
+    display: flex;
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .img-mob {
+    width: calc(100% - 85px);
+  }
+
+  .img-mob {
+    margin-right: 26px;
+  }
+
+  .title.fourth,
+  .custom-proj {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .bg-fourth {
+    background-image: url('./images/backgrounds/background-fourth-mob.svg');
+    background-size: 100%;
+    background-position: 0px -185px;
+  }
+
+  .bg-testimonials {
+    background-image: url('./images/backgrounds/background-testimonials.svg');
+    background-size: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .d-md-flex {
+    display: flex;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+
+  .text-md-start {
+    text-align: left;
+  }
+
+  .justify-content-md-start {
+    justify-content: flex-start;
+  }
+}
