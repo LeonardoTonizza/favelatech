@@ -12,7 +12,7 @@
 
   <body>
     <div x-data="{ open: false }">
-      <nav class="container px-4 lg:px-0 py-1 flex items-center justify-between">
+      <nav class="container d-none d-md-flex px-4 lg:px-0 py-1 flex items-center justify-between">
         <div class="flex lg:flex-1">
           <a href="#">
             <img src="images/logo.svg" alt="" width="105" height="64" />
@@ -111,88 +111,131 @@
       </div>
     </div>
 
-    <header class="container px-4 lg:px-0">
-      <div class="py-32 sm:py-48 lg:py-60">
-        <h1 class="tracking-tight text-gray-900">
-          <span class="text-green-600 font-display text-[5rem] leading-none">Favela Tech </span>
-          <span class="font-['GilroyExtraBold'] text-4xl sm:text-6xl">
-            atua <br class="hidden md:block" />
-            para levar a tecnologia <br class="hidden md:block" />
-            para as favelas do Brasil
-          </span>
-        </h1>
+    <div class="my-bg-top">
+      <header class="container px-4 lg:px-0">
+        <div class="py-32 top-mob sm:py-48 lg:py-60">
+          <h1 class="tracking-tight text-gray-900 text-center text-md-start">
+            <span class="text-green-600 font-display text-[5rem] leading-none principal-title">Favela Tech</span> <br />
+            <span class="font-['GilroyExtraBold'] text-4xl sm:text-6xl subtext">
+              nosso propósito é apresentar, ensinar e  <br />
+              gerar renda para população XXX dentro  <br />
+              do mercado que mais cresce no mundo
+            </span>
+          </h1>
 
-        <p class="mt-6 text-2xl text-gray-600">
-          Assistindo principalmente a população em extrema <br />
-          vulnerabilidade, combatendo a fome, a miséria, a falta de abrigo <br />
-          e o desamparo, levando educação gratuita, acolhimento.
-        </p>
+          <div class="d-flex justify-content-center justify-content-md-start">
+            <a
+              href="#"
+              class="inline-block font-['GilroyExtraBold'] text-black mt-10 min-w-[237px] text-center rounded bg-yellow-600 px-3.5 py-6 text-base shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
+            >
+              FAÇA PARTE
+            </a>
+          </div>
+        </div>
+      </header>
+    </div>
 
-        <a
-          href="#"
-          class="inline-block font-['GilroyExtraBold'] text-black mt-10 min-w-[237px] text-center rounded bg-yellow-600 px-3.5 py-6 text-base shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
-        >
-          SAIBA MAIS
-        </a>
-      </div>
-    </header>
-
-    <section class="py-28 sm:py-40 bg-slate-800">
+    <section class="py-28 sm:py-40 bg-slate-800 bg-subtop">
       <div class="container px-4 sm:px-0 grid sm:grid-cols-2 md:grid-cols-3 gap-12 sm:gap-28 text-center text-white">
         <div>
-          <h2 class="text-6xl sm:text-5xl lg:text-[5rem] font-display">+300</h2>
-          <p class="text-2xl font-['GilroyExtraBold']">Crianças e adolescentes atendidos por ano</p>
+          <h2 class="text-6xl sm:text-5xl lg:text-[5rem] font-display">98</h2>
+          <p class="text-2xl font-['Poppins']">Colaboradores diretos</p>
         </div>
 
         <div>
-          <h2 class="text-6xl sm:text-5xl lg:text-[5rem] font-display">+600</h2>
-          <p class="text-2xl font-['GilroyExtraBold']">Atendimentos com o pessoal da comunidade</p>
+          <h2 class="text-6xl sm:text-5xl lg:text-[5rem] font-display">22</h2>
+          <p class="text-2xl font-['Poppins']">Empresas apoiando <br class="hidden md:block" /> até o momento</p>
         </div>
 
         <div>
-          <h2 class="text-6xl sm:text-5xl lg:text-[5rem] font-display">+800</h2>
-          <p class="text-2xl font-['GilroyExtraBold']">Pessoas que aprenderam sobre tecnologia</p>
+          <h2 class="text-6xl sm:text-5xl lg:text-[5rem] font-display green">10.000</h2>
+          <p class="text-2xl font-['Poppins'] green">Vidas transformadas (nossa <br class="hidden md:block" /> meta para 2023)</p>
         </div>
       </div>
     </section>
 
-    <section class="py-28 sm:py-40 container px-4 sm:px-0 grid md:grid-cols-2">
-      <div class="self-center">
-        <h2 class="text-5xl md:text-6xl md:leading-tight">
-          <span>
-            Conheça mais sobre <br class="hidden md:block" />
-            a
-          </span>
-          <span class="text-red-400 font-display">Favela Tech</span>
-        </h2>
+    <div class="bg-third">
+      <section class="py-28 sm:py-40 container px-4 sm:px-0 grid md:grid-cols-2">
+        <div class="self-center">
+          <h2 class="text-5xl md:text-6xl md:leading-tight text-center meeting-title">
+            <span>
+              Conheça mais <br class="d-none d-md-block" />
+              sobre a
+            </span>
+            <span class="text-red-400 font-display">Favela Tech</span>
+          </h2>
 
-        <p class="mt-6 text-2xl">
-          Somos uma empresa no segmento de telecomunica telecomunicações atuando no mercado desde 1990 em Ribeirão Preto
-          atuando em soluções em telefonia
-        </p>
-      </div>
+          <p class="mt-6 text-2xl description-meet">
+            Nascemos a partir do sonho dos nossos fundadores em <br class="hidden md:block" />
+            formar crianças e adolescentes no mercado de <br class="hidden md:block" />
+            tecnologia, entendemos a necessidade primárias de <br class="hidden md:block" />
+            apresentar esse mercado como uma solução de <br class="hidden md:block" />
+            transformação, depois ensinar/capacitar depois<br class="hidden md:block" />
+            introduzir no mercado de trabalho gerando receita direta
+          </p>
+        </div>
 
-      <img
-        class="hidden md:block"
-        src="images/asian-girl-using-notebook-of-searching-some-information-at-countryside-of-thailand.jpg"
-        alt=""
-        width="720"
-        height="671"
-      />
-    </section>
+        <img
+          class="w-100"
+          src="./images/backgrounds/child.svg"
+          alt=""
+          width="720"
+          height="671"
+        />
+      </section>
+    </div>
 
-    <section class="py-28 sm:py-40 bg-slate-400">
-      <h2 class="text-center">Nossos Projetos</h2>
-    </section>
+    <div class="bg-fourth">
+      <section class="container py-28 sm:py-40">
+        <h2 class="title fourth text-center text-md-start">Nossos <span class="custom-proj">Projetos</span></h2>
 
-    <section class="py-28 sm:py-40 bg-green-900">
+        <img
+          class="hidden md:block"
+          src="./images/backgrounds/carousel/1.svg"
+          alt=""
+          class="w-100"
+        />
+
+        <div class="my-scroll">
+          <img
+            src="./images/backgrounds/carousel/2.svg"
+            alt=""
+            class="img-mob"
+          />
+
+          <img
+            src="./images/backgrounds/carousel/3.svg"
+            alt=""
+            class="img-mob"
+          />
+
+          <img
+            src="./images/backgrounds/carousel/4.svg"
+            alt=""
+            class="img-mob"
+          />
+
+          <img
+            src="./images/backgrounds/carousel/5.svg"
+            alt=""
+            class="img-mob"
+          />
+
+          <img
+            src="./images/backgrounds/carousel/6.svg"
+            alt=""
+            class="img-mob"
+          />
+        </div>
+      </section>
+    </div>
+
+    <div class="d-md-none bg-testimonials">
+      TESTEMUNHOS
+    </div>
+
+    <section class="py-28 sm:py-40 bg-fifth">
       <div class="container px-4 md:px-0 text-center">
-        <h2 class="text-5xl sm:text-6xl font-display">Testemunhos</h2>
-        <p class="mt-2 text-2xl max-w-[900px] mx-auto">
-          Somos uma empresa no segmento de telecomunica <br />
-          telecomunicações atuando no mercado desde 1990 em Ribeirão Preto atuando
-        </p>
-
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-16">
           <div class="bg-white rounded-xl mt-16 px-4 lg:px-8 pb-4 lg:pb-8">
             <div class="relative flex justify-center">
@@ -254,170 +297,173 @@
       </div>
     </section>
 
-    <section class="py-28 sm:py-40 bg-slate-400">
-      <h2 class="text-center">Nosso Blog</h2>
+    <section class="py-28 sm:py-40 bg-sixty">
+      <div class="container">
+        <div class="flex-center mb-64">
+          <img
+            src="./images/backgrounds/blog-title.svg"
+            class="hidden md:block"
+          />
+        </div>
+
+        <img
+          src="./images/backgrounds/blog.svg"
+          class="hidden md:block w-100"
+        />
+      </div>
     </section>
 
-    <section class="py-28 sm:py-40 bg-green-900">
+    <section class="py-28 sm:py-40 bg-seventh">
       <div class="container px-4 lg:px-9">
         <h2 class="text-center text-3xl">FAQ</h2>
         <h3 class="text-center text-6xl font-display mt-2">Dúvidas Frenquentes</h3>
 
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-9 mt-16">
           <div class="bg-white rounded-lg py-7 px-5">
-            <h4 class="text-2xl font-['GilroyExtraBold']">Qual a melhor data para doação?</h4>
+            <h4 class="text-2xl font-['GilroyExtraBold']">Como ajudar?</h4>
             <p class="mt-3.5">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
-              mais do que ajudar o proximo
+              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada mais do que ajudar o
             </p>
           </div>
 
           <div class="bg-white rounded-lg py-7 px-5">
-            <h4 class="text-2xl font-['GilroyExtraBold']">Posso doar todos os meses?</h4>
+            <h4 class="text-2xl font-['GilroyExtraBold']">Como me cadastrar no curso?</h4>
             <p class="mt-3.5">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
-              mais do que ajudar o proximo
+              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada mais do que
             </p>
           </div>
 
           <div class="bg-white rounded-lg py-7 px-5">
-            <h4 class="text-2xl font-['GilroyExtraBold']">Onde posso doar?</h4>
+            <h4 class="text-2xl font-['GilroyExtraBold']">Como começar a trabalhar?</h4>
             <p class="mt-3.5">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
-              mais do que ajudar o proximo
+              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada mais do que
             </p>
           </div>
 
           <div class="bg-white rounded-lg py-7 px-5">
-            <h4 class="text-2xl font-['GilroyExtraBold']">Qual a melhor data para doação?</h4>
+            <h4 class="text-2xl font-['GilroyExtraBold']">Como me escrever nas mentorias?</h4>
             <p class="mt-3.5">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
-              mais do que ajudar o proximo
+              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada mais do que ajudar o
             </p>
           </div>
 
           <div class="bg-white rounded-lg py-7 px-5">
-            <h4 class="text-2xl font-['GilroyExtraBold']">Posso doar todos os meses?</h4>
+            <h4 class="text-2xl font-['GilroyExtraBold']">Onde são os locais de estudo?</h4>
             <p class="mt-3.5">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
-              mais do que ajudar o proximo
+              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada mais do que
             </p>
           </div>
 
           <div class="bg-white rounded-lg py-7 px-5">
-            <h4 class="text-2xl font-['GilroyExtraBold']">Onde posso doar?</h4>
+            <h4 class="text-2xl font-['GilroyExtraBold']">Onde são os locais de trabalho?</h4>
             <p class="mt-3.5">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
-              mais do que ajudar o proximo
+              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada mais do que
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-28 sm:py-40 px-4 lg:px-16 container">
-      <h2 class="text-6xl text-center">Como ajudar a <span class="font-display">Favela Tech</span></h2>
+    <div class="bg-eighth">
+      <section class="py-28 sm:py-40 px-4 lg:px-16 container">
+        <h2 class="text-6xl text-center">Como ajudar a <span class="font-display">Favela Tech</span></h2>
 
-      <div class="grid md:grid-cols-2 mt-16 border rounded-lg">
-        <div class="bg-slate-100 p-5 flex flex-col gap-5">
-          <div class="p-11 border rounded-lg">
-            <h3 class="text-2xl font-['GilroyExtraBold']">Quero doar meu Tempo</h3>
-            <p class="mt-2">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
-              mais do que ajudar o proximo
-            </p>
+        <div class="grid md:grid-cols-2 mt-16 border rounded-lg">
+          <div class="bg-slate-100 p-5 flex flex-col gap-5">
+            <div class="p-11 border rounded-lg">
+              <h3 class="text-2xl font-['GilroyExtraBold']">Quero doar meu Tempo</h3>
+              <p class="mt-2">
+                “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
+                mais do que ajudar o proximo
+              </p>
+            </div>
+
+            <div class="p-11 border rounded-lg">
+              <h3 class="text-2xl font-['GilroyExtraBold']">Quero doar meu Conhecimento</h3>
+              <p class="mt-2">
+                “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
+                mais do que ajudar o proximo
+              </p>
+            </div>
+
+            <div class="p-11 border rounded-lg">
+              <h3 class="text-2xl font-['GilroyExtraBold']">Quero doar Financeiramente</h3>
+              <p class="mt-2">
+                “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
+                mais do que ajudar o proximo
+              </p>
+            </div>
           </div>
 
-          <div class="p-11 border rounded-lg">
-            <h3 class="text-2xl font-['GilroyExtraBold']">Quero doar meu Conhecimento</h3>
-            <p class="mt-2">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
-              mais do que ajudar o proximo
-            </p>
-          </div>
+          <div class="bg-green-300 px-8 py-16">
+            <h3 class="text-3xl text-center">Quero doar meu <span class="font-['GilroyExtraBold']">Tempo</span></h3>
 
-          <div class="p-11 border rounded-lg">
-            <h3 class="text-2xl font-['GilroyExtraBold']">Quero doar Financeiramente</h3>
-            <p class="mt-2">
-              “Uma Ong muito acolhedora me senti muito bem o tempo que passei por lá pessoal do bem que não quer nada
-              mais do que ajudar o proximo
-            </p>
+            <form class="mt-10">
+              <input
+                class="px-5 py-4 text-lg border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-lg focus:ring-1"
+                placeholder="Seu nome"
+              />
+              <input
+                type="email"
+                class="mt-3.5 px-5 py-4 text-lg border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-lg focus:ring-1"
+                placeholder="Seu email"
+              />
+              <input
+                type="tel"
+                class="mt-3.5 px-5 py-4 text-lg border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-lg focus:ring-1"
+                placeholder="Seu telefone"
+              />
+
+              <textarea
+                rows="8"
+                placeholder="Mensagem"
+                class="mt-3.5 px-5 py-4 text-lg border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-lg focus:ring-1"
+              ></textarea>
+
+              <button
+                type="submit"
+                class="mt-8 text-lg font-['GilroyExtraBold'] min-w-[213px] rounded-lg bg-yellow-600 p-4 shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
+              >
+                Enviar
+              </button>
+            </form>
           </div>
         </div>
-
-        <div class="bg-green-300 px-8 py-16">
-          <h3 class="text-3xl text-center">Quero doar meu <span class="font-['GilroyExtraBold']">Tempo</span></h3>
-
-          <form class="mt-10">
-            <input
-              class="px-5 py-4 text-lg border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-lg focus:ring-1"
-              placeholder="Seu nome"
-            />
-            <input
-              type="email"
-              class="mt-3.5 px-5 py-4 text-lg border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-lg focus:ring-1"
-              placeholder="Seu email"
-            />
-            <input
-              type="tel"
-              class="mt-3.5 px-5 py-4 text-lg border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-lg focus:ring-1"
-              placeholder="Seu telefone"
-            />
-
-            <textarea
-              rows="8"
-              placeholder="Mensagem"
-              class="mt-3.5 px-5 py-4 text-lg border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-lg focus:ring-1"
-            ></textarea>
-
-            <button
-              type="submit"
-              class="mt-8 text-lg font-['GilroyExtraBold'] min-w-[213px] rounded-lg bg-yellow-600 p-4 shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
-            >
-              Enviar
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <footer class="pt-28 sm:pt-40 bg-cyan-500 text-white">
-      <div class="container px-4 md:px-0 font-['GilroyExtraBold']">
-        <div class="flex justify-between">
+      <div class="container align-items-center d-md-flex justify-content-between px-4 md:px-0 font-['GilroyExtraBold']">
+        <div>
           <img src="images/logo-footer.svg" alt="" />
+        </div>
 
-          <div class="hidden xl:flex gap-12 text-3xl">
-            <a href="#">Home</a>
+        <div>
+          <div class="d-flex align-items-center">
+            <img src="./images/icons/envelope.svg" alt="" class="img-icon" />
 
-            <a href="#">Empresa</a>
+            <p>
+              E-mail | contato@favelatech.org
+            </p>
+          </div>
 
-            <a href="#">Testemunhos</a>
+          <div class="d-flex align-items-center">
+            <img src="./images/icons/phone.svg" alt="" class="img-icon" />
 
-            <a href="#">Blog</a>
-
-            <a href="#">Contato</a>
+            <p>
+              Telefone |  9.4747-6464
+            </p>
           </div>
         </div>
 
-        <div class="mt-8 flex flex-col lg:flex-row justify-between">
-          <ul class="text-xl grid gap-7">
-            <li>E-mail | faleconosco@vistosok.com.br</li>
-            <li>Telefone | (11) 99665-5599</li>
-            <li>Rua Carlos Villalva, 118 - 7º andar - Vila Guarani - São Paulo - SP - CEP: 04307-000</li>
-            <li>
-              <a href="#">instagram</a>
-              <a href="#">facebook</a>
-              <a href="#">youtube</a>
-              <a href="#">twitter</a>
-            </li>
-          </ul>
+        <div>
+          <!-- <img src="images/instagram.svg" alt="" />
 
-          <a
-            href="#"
-            class="mt-8 lg:mt-0 text-black text-2xl text-center h-max font-['GilroyExtraBold'] min-w-[240px] rounded-lg bg-yellow-600 p-6 shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
-          >
-            Como ajudar
-          </a>
+          <img src="images/logo-footer.svg" alt="" />
+
+          <img src="images/logo-footer.svg" alt="" />
+
+          <img src="images/logo-footer.svg" alt="" /> -->
         </div>
       </div>
 
