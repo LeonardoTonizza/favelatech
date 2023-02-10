@@ -40,7 +40,6 @@
 .bg-seventh {
   background-image: url('./images/backgrounds/background-seventh.svg');
   background-size: 100%;
-  padding-bottom: 7rem;
 }
 
 .bg-eighth {
@@ -55,11 +54,104 @@
   margin-right: 10px;
 }
 
+.my-py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.my-px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.my-mt-32 {
+  margin-top: 32px;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.d-none {
+  display: none;
+}
+
+.my-card-mob {
+  height: 415px;
+  position: relative;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #4B4852;
+}
+
+.occupation {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 38px;
+  text-align: center;
+  color: #4B4852;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 24px;
+  width: 100%;
+  left: 0;
+  font-size: 20px;
+}
+
+.click {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 18px;
+  color: #FF6F73;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.meet-text {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 34px;
+  color: #4B4852;
+}
+
+.name {
+  color: #000000;
+}
+
+.testimonial-label {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+  color: #4B4852;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.see-more {
+  width: 237px;
+  height: 70px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
   .my-bg-top {
     background-image: url('./images/backgrounds/background-top-mob.png');
     background-size: cover;
-    min-height: 85vh;
+    min-height: 100vh;
   }
 
   .bg-subtop {
@@ -81,5 +173,115 @@
     background-image: url('./images/backgrounds/background-fourth-mob.svg');
     background-size: 100%;
     background-position: 0px -185px;
+  }
+
+  .bg-fifth {
+    background-image: url('./images/backgrounds/background-fifth-mob.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: auto;
+    background-position: 0;
+  }
+
+  .bg-seventh {
+    background-image: url('./images/backgrounds/background-seventh-mob.svg');
+  }
+
+  .bg-eighth {
+    background-image: none;
+  }
+
+  .my-bg-top .aux {
+    padding-bottom: 5rem;
+  }
+
+  .test-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .scroll-mob {
+    overflow-x: auto;
+    display: flex;
+    padding: 0 16px;
+  }
+
+  .my-py-80-mob {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .my-card-mob {
+    width: calc(100vw - 62px);
+    height: 330px;
+    margin-right: 10px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #4B4852;
+  }
+
+  .meet-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #4B4852;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .testimonial-label {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .bottom p.occupation {
+    font-size: 13px !important;
+    line-height: 140%;
+  }
+
+  .top-eighth {
+    position: absolute;
+    top: -17px;
+    right: 0;
+    width: 53px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .d-md-none {
+    display: none;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .bottom p.occupation {
+    font-size: 18px;
+  }
+
+  .bg-fifth {
+    background-size: 145%;
+  }
+
+  .bg-sixty {
+    background-size: 113%;
+  }
+
+  .bg-third {
+    background-size: 138%;
+  }
+
+  .bg-seventh {
+    background-size: 138%;
   }
 }
