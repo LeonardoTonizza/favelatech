@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.2.6"
+  },
+  "dependencies": {
+    "@ionic/core": "^6.5.3"
   }
 }
