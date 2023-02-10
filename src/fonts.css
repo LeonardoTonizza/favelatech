@@ -8,10 +8,6 @@
   background-size: cover;
 }
 
-.green {
-  color: #75d8ab;
-}
-
 .bg-subtop {
   background-image: url('./images/backgrounds/background-subtop.png');
   background-size: cover;
@@ -59,10 +55,6 @@
   margin-right: 10px;
 }
 
-.d-none {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
   .my-bg-top {
     background-image: url('./images/backgrounds/background-top-mob.png');
@@ -79,15 +71,6 @@
   .bg-third {
     background-image: url('./images/backgrounds/bg-third-mob.svg');
     background-position: 0 -80px;
-  }
-
-  .description-meet {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: #4b4852;
-    margin-bottom: 31px;
   }
 
   .img-mob {
