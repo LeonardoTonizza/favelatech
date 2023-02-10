@@ -137,6 +137,9 @@
 .see-more {
   width: 237px;
   height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .d-flex {
@@ -251,6 +254,10 @@
     top: -17px;
     right: 0;
     width: 53px;
+  }
+
+  .img-logo-footer {
+    width: 155px;
   }
 }
 
