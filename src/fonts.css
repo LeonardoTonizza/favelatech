@@ -40,7 +40,6 @@
 .bg-seventh {
   background-image: url('./images/backgrounds/background-seventh.svg');
   background-size: 100%;
-  padding-bottom: 3.8rem;
 }
 
 .bg-eighth {
@@ -131,6 +130,23 @@
   color: #4B4852;
 }
 
+.p-relative {
+  position: relative;
+}
+
+.see-more {
+  width: 237px;
+  height: 70px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
   .my-bg-top {
     background-image: url('./images/backgrounds/background-top-mob.png');
@@ -165,6 +181,14 @@
     background-repeat: no-repeat;
     min-height: auto;
     background-position: 0;
+  }
+
+  .bg-seventh {
+    background-image: url('./images/backgrounds/background-seventh-mob.svg');
+  }
+
+  .bg-eighth {
+    background-image: none;
   }
 
   .my-bg-top .aux {
@@ -221,6 +245,13 @@
     font-size: 13px !important;
     line-height: 140%;
   }
+
+  .top-eighth {
+    position: absolute;
+    top: -17px;
+    right: 0;
+    width: 53px;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -247,6 +278,10 @@
   }
 
   .bg-third {
+    background-size: 138%;
+  }
+
+  .bg-seventh {
     background-size: 138%;
   }
 }
